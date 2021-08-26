@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>URL Shortener</title>
+      <link rel="stylesheet" href="styles.css" />
+   </head>
+   <body class="flex-center">
+      <div class="title flex-center">URL Shortener</div>
+      <div class="container flex-center">
+         <div id="message"></div>
+         <div id="url-field" class="flex-center" class="input-field">
+            <label for="url">Enter URL</label>
+            <input
+               type="url"
+               name="url"
+               id="url"
+               autocomplete="url"
+               spellcheck="false"
+            />
+         </div>
+         <div id="custom-url-field" class="flex-center" class="input-field">
+            <label for="url"
+               >Enter custom URL (After localhost:3000/url/)</label
+            >
+            <input
+               type="text"
+               name="short-url"
+               id="short-url"
+               spellcheck="false"
+            />
+         </div>
+         <br />
+         <button
+            type="button"
+            id="toggle-custom-url"
+            onclick="toggleCustomURL()"
+         >
+            Add Custom URL
+         </button>
+         <button type="button" onclick="createURL()">Create</button>
+      </div>
+      <script src="app.js"></script>
+   </body>
+</html>
