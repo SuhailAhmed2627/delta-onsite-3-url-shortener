@@ -1,5 +1,8 @@
-# URL shortener
+# URL shortener 🤏
+
+[Click Here to view the Page](https://url-shortener-by-suhail.herokuapp.com)
 Made with React⚛️ and Express.js✨
+Sorry for a Lengthy website name. oops.
 NOTE: when running locally, enter IP manually
 
 ## Installation
