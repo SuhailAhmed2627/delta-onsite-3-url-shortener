@@ -28,7 +28,7 @@ exports.addUrl_POST = async (req, res) => {
          })
             .select("_id")
             .lean();
-         if (result) {
+         if (result || shortenedUrl == "geturls") {
             shortenedUrl = randomString(5);
          } else {
             req.body.shortenedUrl = "http://localhost:3000/url/" + shortenedUrl;

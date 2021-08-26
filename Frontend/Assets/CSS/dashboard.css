@@ -1,0 +1,60 @@
+.dashboard-container {
+   width: 50vw;
+   height: 100vh;
+}
+.dashboard-title {
+   font-family: "Montserrat", sans-serif;
+   font-size: 40px;
+   height: 10%;
+}
+
+.inner-container {
+   width: 70%;
+   height: 50%;
+   align-items: flex-start;
+   justify-content: start;
+}
+
+.sub-heading {
+   font-size: 20px;
+   font-weight: bolder;
+}
+
+details summary {
+   width: 500px;
+   font-weight: bolder;
+   padding: 0.5rem 0;
+   position: relative;
+   cursor: pointer;
+   font-size: var(--h4);
+   list-style: none;
+   border-top: 1px solid black;
+}
+
+details {
+   padding-bottom: 10px;
+}
+
+details summary:after {
+   content: "+";
+   color: black;
+   position: absolute;
+   font-size: var(--h4);
+   font-weight: bolder;
+   line-height: 0;
+   margin-top: 0.75rem;
+   right: 0;
+   font-weight: 200;
+   transform-origin: center;
+   transition: 200ms linear;
+}
+details[open] summary:after {
+   transform: rotate(45deg);
+   font-size: var(--h4);
+}
+details summary {
+   outline: 0;
+}
+details > p {
+   font-size: 0.95rem;
+}

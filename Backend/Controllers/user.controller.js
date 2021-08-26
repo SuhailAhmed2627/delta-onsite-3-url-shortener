@@ -1,4 +1,5 @@
 const User = require("../Models/user.model.js");
+const Url = require("../Models/url.model.js");
 const jwt = require("jsonwebtoken");
 const { newToken } = require("../Auth/auth.js");
 
@@ -31,6 +32,7 @@ exports.logInUser_POST = async (req, res) => {
    if (!req.body.userID || !req.body.password) {
       return res.status(400).send({ message: "Need UserID and password" });
    }
+
    try {
       let user = await User.findOne({ userID: req.body.userID });
       if (!user) {
@@ -42,6 +44,11 @@ exports.logInUser_POST = async (req, res) => {
       console.log(error);
       return res.status(400).send({ message: "User ID not signed up" });
    }
+};
+
+exports.getUrls_GET = async (req, res) => {
+   const urls = await Url.find({ createdBy: req.body.user._id }).lean();
+   res.status(200).send(urls);
 };
 
 exports.getUser_POST = async (req, res) => {

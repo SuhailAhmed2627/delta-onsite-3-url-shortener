@@ -2,6 +2,7 @@ const Router = require("express").Router;
 const {
    addUrl_POST,
    reRoute_GET,
+   getUrls_GET,
 } = require("../Controllers/url.controller.js");
 const { protect } = require("../Auth/auth.js");
 const router = Router();

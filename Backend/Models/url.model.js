@@ -25,6 +25,7 @@ const urlSchema = new Schema({
          samerica: { type: Number },
          namerica: { type: Number },
          africa: { type: Number },
+         australia: { type: Number },
       },
       default: {
          count: 0,
@@ -33,6 +34,7 @@ const urlSchema = new Schema({
          samerica: 0,
          namerica: 0,
          africa: 0,
+         australia: 0,
       },
    },
 });
