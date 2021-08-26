@@ -1,0 +1,62 @@
+#root {
+   background-color: gainsboro;
+}
+
+.modal {
+   z-index: 10;
+   position: absolute;
+   width: 600px;
+   height: 700px;
+   border-radius: 25px;
+   background-color: white;
+   flex-direction: column;
+}
+
+.input-field {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   font-size: 18px;
+   margin-bottom: 20px;
+}
+
+.input-field > label {
+   font-size: 14px;
+}
+
+.outline {
+   background: black;
+   z-index: 5;
+   width: 620px;
+   height: 720px;
+   border-radius: 35px;
+}
+
+div[class|="container"] {
+   width: 600px;
+   flex-direction: column;
+}
+
+.container-600x100 {
+   height: 100px;
+}
+
+.container-600x100 > h1 {
+   font-size: 36px;
+}
+
+.container-600x400 {
+   height: 400px;
+}
+
+.error {
+   color: #d0454c;
+}
+
+.success {
+   color: #529e66;
+}
+
+.warning {
+   color: #e1c542;
+}
